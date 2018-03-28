@@ -383,7 +383,7 @@ body.mobile .header .main-nav .btn-feature a {height:29px; display:block; paddin
 .section.media-home .card  .view.overlay {
 	height: 200px;
 	width: 100%;
-	background-size: cotain !important;
+	background-size: contain !important;
 	background-repeat: no-repeat !important;
 }
 
