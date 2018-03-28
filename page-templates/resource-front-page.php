@@ -99,6 +99,10 @@ else {
                 <div class="angle"></div>
                 <div class="inner">
                     <div class="pad">
+                        <header class="light">
+                            <h1 class="text-center">Featured in GCI Resources</h1>
+                            <hr>
+                        </header>
                         <div class="content">
                             <div class="card-cascade wider">
                             <?php
