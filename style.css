@@ -366,6 +366,7 @@ body.mobile .header .main-nav .btn-feature a {height:29px; display:block; paddin
 }
 .home .container .section.banner.main {
 	max-height: 740px;
+	height: 740px;
 }
 
 .section.media-home .card {

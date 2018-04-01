@@ -15,11 +15,11 @@ class BackgroundImage extends AbstractComponent {
         $bannerBtnWin = $this->getAttribute('bannerBtnWin');
 
         $action_button = null;
-        if (!empty($bannerBtnLink))
+        if (!empty(trim($bannerBtnLink)))
             $action_button =  "<span class=\"btn large\">
                     <a href=\"{$bannerBtnLink}\" {$bannerBtnWin}>{$bannerBtnTxt}</a>
                 </span>";
-        
+
         $html =<<<HTML
             <span class="txt">
                 <span class="desc">
