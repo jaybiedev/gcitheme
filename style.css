@@ -988,7 +988,7 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 }
 @media (min-width: 1232px) {
 	.section.banner > .angle {
-		top: 33%;
+		top: 35%;
 	}
 }
 @media (max-width:1270px) {
