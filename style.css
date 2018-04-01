@@ -1001,6 +1001,7 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	.generic.participate .content-nav .content-nav-item {font-size:20px; margin-left:15px; padding-right:15px;}
 	.generic.participate .content-nav .content-nav-item a {padding-left:10px; padding-right:10px;}
 }
+
 @media (max-width:1095px) {
 	.angle-btm-right {display:none;}
 	.section.banner.main .txt .desc {font-size:36px; line-height:34px;}
@@ -1016,9 +1017,6 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	}
 	.section.banner > .angle {
 		top: 20%;
-	}
-	.section.media-home .card .view.overlay {
-		background-size: cover !important;
 	}
 }
 @media (max-width:1044px) {
@@ -1266,5 +1264,16 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	.navbar-nav>li>a {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+}
+
+@media (min-width:768px) {
+	.section.media-home .card .view.overlay {
+		background-size: cover !important;
+	}
+}
+@media (min-width:1200px) {
+	.section.media-home .card .view.overlay {
+		background-size: contain !important;
 	}
 }
