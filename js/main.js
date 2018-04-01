@@ -106,11 +106,12 @@ function resizeCheck() {
 		$('body').addClass('mobile');
 	}
 
+	/*
     if ($('.section.banner.main').length > 0) {
         $('.section.banner.main').css('height', (browserHeight * 0.75) + 'px');
     }
 
-	/*
+
 	//set width of header search box
 	var mainNavWidth = $('.header .main-nav > ul').width() + 10;
 	$('.header .search-box').css('width',mainNavWidth + 'px');

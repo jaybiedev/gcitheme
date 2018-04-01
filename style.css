@@ -365,7 +365,7 @@ body.mobile .header .main-nav .btn-feature a {height:29px; display:block; paddin
 	color: #d3ab39;
 }
 .home .container .section.banner.main {
-	max-height: 800px;
+	max-height: 740px;
 }
 
 .section.media-home .card {
@@ -432,9 +432,12 @@ body.mobile .header .main-nav .btn-feature a {height:29px; display:block; paddin
 .num-nav ul > li.active > a {font-weight:700;}
 
 .section.banner {z-index:1; margin-top:0; position:static;}
-.section.banner > .angle {width:500px; height:140px; background:#d3ab39; position:absolute; left:0; z-index:2; -ms-transform:rotate(8deg); -ms-transform-origin:0 0;
-	-webkit-transform:rotate(8deg); -webkit-transform-origin:0 0; transform:rotate(8deg); transform-origin:0 0;
-	top: 515px;
+.section.banner > .angle {
+	width:500px; height:140px; background:#d3ab39;
+	position:absolute; left:0; z-index:2; -ms-transform:rotate(8deg); -ms-transform-origin:0 0;
+	-webkit-transform:rotate(8deg); -webkit-transform-origin:0 0; transform:rotate(8deg);
+	transform-origin:0 0;
+	top: 28%;
 }
 .section.banner.main > .angle {width:560px;}
 .section.banner > .angle:after {border:0;}
@@ -983,6 +986,11 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 @media (max-width:1335px) {
 	.donate2 .item {width:40%;}
 }
+@media (min-width: 1232px) {
+	.section.banner > .angle {
+		top: 33%;
+	}
+}
 @media (max-width:1270px) {
 	.header .logo {padding-left:20px;}
 	.header .main-nav > ul > li {margin:0 6px -3px;}
@@ -1001,6 +1009,16 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	.generic.participate .content-nav .content-nav-item {font-size:18px;}
 	.donate2 .item h1 {font-size:24px;}
 	.church-blue.sub .content {max-width:735px;}
+
+	.home .container .section.banner.main {
+		height: 640px;
+	}
+	.section.banner > .angle {
+		top: 20%;
+	}
+	.section.media-home .card .view.overlay {
+		background-size: cover !important;
+	}
 }
 @media (max-width:1044px) {
 	.donate1 .content .left {width:40%;}
@@ -1039,6 +1057,13 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	.donate1 .donate-apply input[type="text"] {max-width:282px;}
 	.donate2 .item {width:38%;}
 	.church-blue.sub .content {max-width:490px;}
+
+	.home .container .section.banner.main {
+		height: 490px;
+	}
+	.section.banner > .angle {
+		top: 15%;
+	}
 
 }
 @media (max-width:767px) {
@@ -1113,10 +1138,6 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 	.footer .btm .right {width:auto; display:block; float:none; text-align:center;}
 
 	.angle-blue  {display:none;}
-
-	.home .container .section.banner.main {
-		max-height: 400px;
-	}
 
 }
 @media (max-width:600px) {
