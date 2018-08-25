@@ -366,7 +366,12 @@ body.mobile .header .main-nav .btn-feature a {height:29px; display:block; paddin
 }
 .home .container .section.banner.main {
 	max-height: 740px;
-	height: 740px;
+	/* height: 740px; */
+        height: 610px;
+}
+
+.home .content .swiper-quotes h2 {
+	line-height: normal;
 }
 
 .section.media-home .card {
@@ -901,6 +906,7 @@ body.tag .section.generic.search .post-result header h1 a:hover {color:#161b2d;}
 .clear {clear:both;}
 .hide, .hidden {display:none;}
 .center {text-align:center;}
+.center-margin {margin-left: auto;margin-right:auto}
 .footnote {font-size:85%;}
 .noselect {-webkit-touch-callout:none; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
 .trans {-webkit-transition:all .25s ease; -moz-transition:all .25s ease; transition:all .25s ease;}

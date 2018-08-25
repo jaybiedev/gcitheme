@@ -6,6 +6,11 @@ $(document).ready(function() {
     if (typeof menu_tree == 'object')
         menu_tree.treed({openedClass:'glyphicon-chevron-down', closedClass:'glyphicon-chevron-right'});
 
+
+    // fix height
+    if ($(window).height() < 700) {
+    		$(".home .container .section.banner.main").css('height', '420px');
+	}
 });
 
 

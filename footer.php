@@ -33,7 +33,7 @@
 							<span>&copy; <?php echo date('Y') . ' '?> Grace Communion International.</span> All Rights Reserved
 						</div><!--end .right-->
 						<div class="left">
-							<a href="http://www.gci.org" target="_blank" title="Grace Communion International"><?=get_bloginfo('title');?></a>
+							<a href="https://resources.gci.org" target="_blank" title="Grace Communion International"><?=get_bloginfo('title');?></a>
 						</div><!--end .left-->
 					</div><!--end .btm-->
 				</div><!--end .pad-->
