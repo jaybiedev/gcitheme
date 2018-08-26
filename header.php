@@ -127,7 +127,8 @@ foreach ($menuitems as $key=>$item) {
                             wp_nav_menu( array(
                                     'theme_location' => 'primary',
                                     'menu_class'     => 'nav navbar-nav pull-right hidden',
-                                    'container'		 => 'container-fluid'
+                                    'container'		 => 'container-fluid',
+                                    'menu_id' => 'menu-main-menu'
                                 )
                             );
                             ?>

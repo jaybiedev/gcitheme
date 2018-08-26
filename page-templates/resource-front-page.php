@@ -15,6 +15,8 @@ include_once(get_template_directory() . "/lib/classes/BackgroundImage.php");
 
 get_header();
 
+$site_name = get_bloginfo('name');
+
 $post_id = get_the_ID();
 $Events = new Events($post_id);
 $Media = new Media($post_id);
@@ -40,15 +42,27 @@ else {
     $bannerBtnTxt = '';
     $bannerBtnLink = '';
     $bannerBtnWin = '';
-
+    
     if (get_field('banner_buttons')) {
-
         while (has_sub_field('banner_buttons')) {
             $bannerBtnTxt = get_sub_field('text');
             $bannerBtnLink = get_sub_field('link');
             $bannerBtnWin = '';
             if (get_sub_field('new_window')) {
                 $bannerBtnWin = ' target="_blank"';
+            }
+        }
+        
+        //  or banner_buttons can come as array 'text'=>'link'
+        if (empty($bannerBtnTxt) && is_string(get_field('banner_buttons'))) {
+            $banner_buttons = get_field('banner_buttons');
+
+            $aBtn = json_decode($banner_buttons, true);
+            
+            if (!empty($aBtn)) {
+                $btnprop = explode('=>', $banner_buttons);
+                $bannerBtnTxt = $aBtn['text'];
+                $bannerBtnLink = $aBtn['link'];
             }
         }
     }
@@ -60,8 +74,6 @@ else {
             'largeTopTxt'=>get_field('large_text_top'),
             'largeBtmTxt'=>get_field('large_text_bottom'),
             'small_text'=>get_field('small_text'),
-            'largeTopTxt'=>get_field('large_text_top'),
-            'largeTopTxt'=>get_field('large_text_top'),
             'bannerBtnTxt'=>$bannerBtnTxt,
             'bannerBtnLink'=>$bannerBtnLink,
             'bannerBtnWin'=> $bannerBtnWin,
@@ -84,7 +96,7 @@ else {
 				<div class="pad">
 					<div class="content">
 						<div class="swiper-quotes">
-							<div class="swiper-wrapper">
+							<div class="non-swiper-wrapper">
 							<?php echo $content;?>
 							</div><!--end .swiper-wrapper-->
 						</div><!--end .swiper-quotes-->
@@ -100,7 +112,7 @@ else {
                 <div class="inner">
                     <div class="pad">
                         <header class="light">
-                            <h1 class="text-center">Featured in GCI Resources</h1>
+                            <h1 class="text-center">Featured in <?php echo $site_name;?></h1>
                             <hr>
                         </header>
                         <div class="content">

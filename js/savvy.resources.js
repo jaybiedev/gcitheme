@@ -43,6 +43,9 @@ Savvy = {
 
     menuFix : function() {
         var nav = $('#menu-main-menu.nav.navbar-nav');
+        if (!nav || nav.length == 0) {
+        	nav = $('#menu-top-menu.nav.navbar-nav');
+        }
         var subs = $("ul.sub-menu", nav);
         nav.removeClass('hidden');
         $(subs).each(function(a, el) {
